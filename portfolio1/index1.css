@@ -1,0 +1,247 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 100px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.banner.night{
+    background: #333;
+}
+.banner::before{
+    content: "";
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    width: 150px;
+    height: 150px;
+    background: url(dotted.png);
+    background-size: cover;
+    animation: animateColor 10s linear infinite;
+    transition-delay: -5s;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    color: #333;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 0.5s;
+}
+header .logo span{
+    color: #2196f3;
+}
+
+header ul{
+    display: flex;
+    gap: 40px;
+}
+header ul li{
+    list-style: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    color: #333;
+    transition: 0.5s;
+}
+
+
+.content{
+    position: relative;
+    z-index: 10;
+    max-width: 700px;
+}
+
+.content h3{
+    font-size: 2em;
+    color: #333;
+    font-weight: 200;
+    transition: 0.5s;
+}
+.content h2{
+    font-size: 5.5em;
+    color: #333;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.content h2 span{ 
+    color: #e91e63;
+}
+.content p{
+    color: #666;
+    font-size: 1.2em;
+    margin: 10px 0;
+    transition: 0.5s;
+}
+
+.content p span{
+    color: #7ab1de;
+}
+.content button{
+    padding: 15px 35px;
+    font-size: 1.25em;
+    background: #2196f3;
+    border: none;
+    outline: none;
+    color: #fff;
+    position: relative;
+    letter-spacing: 0.05em;
+    margin-right: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.content button.chat{
+    background: transparent;
+    color: #233;
+}
+
+.content button.chat ion-icon{
+    position: relative;
+    color: #e91e63;
+    font-size: 1.5em;
+    top: 5px;
+}
+
+.sci{
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    text-decoration: none;
+    font-size: 1.75em;
+    color: #333;
+}
+.sci li a:hover{
+    color: #2196f3;
+}
+
+.daynight{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+    bottom: 25px;
+}
+.banner.night .daynight{
+    background: #444;
+    color: #fff;
+}
+
+.daynight ion-icon:nth-child(2),
+.banner.night .daynight ion-icon:nth-child(1)
+{
+    display: none;
+}
+
+.banner.night header .logo,
+.banner.night .content h2,
+.banner.night .content p,
+.banner.night .content button.chat,
+.banner.night .sci li a,
+.banner.night header ul li a{
+    color: #fff;
+}
+.banner.night .sci li a:hover{
+    color: #2196f3;
+}
+.banner.night .daynight ion-icon:nth-child(2){
+    display: block;
+}
+
+.colors{
+    max-width: 800px;
+    position: absolute;
+    right: 0;
+    animation: animateColor 8s ease-in-out infinite;
+}
+
+@keyframes animateColor{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(50px);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

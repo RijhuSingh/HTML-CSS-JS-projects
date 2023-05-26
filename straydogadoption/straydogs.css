@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: rgba(8, 8, 8, 0.866);
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+nav li{
+    color: white;
+}
+.list{
+    list-style: none;
+    margin: 20px 50px 20px 50px;
+    padding: 10px;
+    /* border: 1px solid white;
+    border-radius: 50%; */
+    /* background-color: rgb(30, 12, 12); */
+}
+/* .list:hover{
+    border-radius: 5px solid white;
+    cursor: pointer;
+    color: rgb(105, 24, 24);
+} */
+#login{
+    /* margin-left: 100px; */
+    color: white;
+}
+nav li a{
+    color:antiquewhite;
+    text-decoration: none;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+    margin-right: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+/* style="text-decoration: none; color: white;" */
+nav li a:hover{
+    color: #d6a680;
+    /* color: rgb(130, 4, 4); */
+    /* background-color: black;
+    color: white; */
+}
+.one{
+    background-image: url("https://images.unsplash.com/photo-1576201836106-db1758fd1c97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTF8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* opacity: 0.5; */
+}
+#quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 40px;
+    /* text-shadow: 2px 2px 5px red; */
+    text-indent: 20px;
+}
+#q1{
+    display :flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:20px;
+}
+#footer{
+    height: 110px;
+    background-color:  rgba(8, 8, 8, 0.866);
+    color: whitesmoke;
+   
+
+}
+.social{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 10px;
+} 
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.logo a {
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.logo a:nth-child(1){
+    background: #4267B2;
+}
+.logo a:nth-child(1):hover{
+    color: #4267B2;
+    background: #fff;
+}
+.logo a:nth-child(2){
+    background: #1da1f2;
+}
+.logo a:nth-child(2):hover{
+    color: #1DA1F2;
+    background: #fff;
+}
+.logo a:nth-child(3){
+    background: #E1306C;
+}
+.logo a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.logo a:nth-child(4){
+    background: #FF0000;
+
+}
+.logo a:nth-child(4):hover{
+  
+  color: #FF0000;
+  background: #fff;
+}
+.logo a:nth-child(5){
+    /* background: #FF0000; */
+    background: #0077B5;
+
+}
+.logo a:nth-child(5):hover{
+    /* color: #FF0000;
+  background: #fff; */
+  color: #0077B5;
+  background: #fff;
+}
+#copyright{
+    display: flex;
+    justify-content: center;
+    align-items:last baseline;
+    position: relative;
+    bottom: 0;
+}
+/* #cpy{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+} */
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 50px; */
+    margin-top: 30px;
+    /* width: 100px; */
+
+}
+#button1{
+    width: 200px;
+    height: 50px;
+    background-color: transparent ;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+#button1:hover{
+    background-color: rgb(13, 16, 8);
+    color: white;
+}
+
+/* #about section */
+
+/* .image{
+    width: 400px;
+    height: 400px;
+} */
+
+
+
+@media screen and (max-width:1050px){
+    #nav img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        /* margin-bottom: 10px; */
+        height: 120px;
+        width: 120px;
+    }
+    #nav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }
+    .list{
+        padding: 2px;
+        margin: 5px;
+    }
+   
+    
+}
+
+@media screen and (max-width:833px){
+    .one{
+        background-image: linear-gradient(#002d40,#1a6180,#8ad4f4);
+    }
+    .one p{
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+    }
+    #button1{
+        color: #fff;
+    }
+    #copyright{
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+    }
+}

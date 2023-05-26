@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* background-color: #094f6e; */
+    /* background-color: #0e061f; */
+    background-color: #002d40;
+
+}
+.container2{
+    display: flex;
+    border: 2px solid #d8cdb0;
+    border-radius: 5px;
+
+}
+
+.quote1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d8cdb0;
+    margin: 10px;
+    /* border: 2px solid #827040; */
+}
+.box1 img{
+    width: 500px;
+    height: 610px;
+    /* border: 2px solid #d8cdb0; */
+    border-right: 2px solid #d8cdb0;
+}
+.box1 h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #d8cdb0;
+}
+#form{
+    margin: 50px;
+    color: white;
+}
+.name{
+    display: flex;
+    margin-bottom: 10px;
+}
+.name input{
+    margin-left: 15px;
+    margin-right: 50px;
+    width: 300px;
+    height: 30px;
+    border: 2px solid #d8cdb0;
+    background: transparent;
+    color: white;
+}
+.name label{
+    margin-right: 20px;
+    font-size: large;
+    padding-top: 5px;
+}
+.mobem input{
+    margin-left: 10px;
+    margin-right: 50px;
+    width: 300px;
+    height: 30px;
+    border: 2px solid #d8cdb0;
+    background: transparent;
+    color: white;
+}
+#input{
+    margin-left: 50px;
+}
+.mobem{
+    display: flex;
+    margin-bottom: 40px;
+}
+/* .textarea{
+    width: 250px;
+} */
+.why{
+    font-size: large;
+    margin-bottom: 10px;
+}
+.textarea{
+    margin-top: 20px;
+    border: 2px solid #d8cdb0;
+    background: transparent;
+    color: white;
+    margin-left: 50px;
+}
+.btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn2 button{
+    padding: 10px 15px 10px 15px;
+    border: 2px solid #d8cdb0;
+    border-radius: 20px;
+    font-size: medium;
+}
+.btn2 button:hover{
+    cursor: pointer;
+    background-color: #d8cdb0;
+    color: rgb(6, 6, 6);
+}

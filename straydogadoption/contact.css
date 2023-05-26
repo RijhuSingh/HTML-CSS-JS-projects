@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://wallpapercave.com/wp/wp5200916.jpg");
+    background-size: cover;
+}
+.heading{
+    display: flex;
+    color: #d8cdb0;
+    margin: 20px 0 30px 150px;
+}
+.container3{
+    width: 50%;
+    padding: 10px;
+    /* border: 2px solid #d8cdb0; */
+    /* position: relative; */
+}
+.form2{
+    color: #d8cdb0;
+    margin-left: 20px;
+}
+.form2 input{
+    padding: 7px;
+    width: 300px;
+    border: 1px solid #d8cdb0;
+    margin-bottom: 30px;
+    background: transparent;
+    color: #d8cdb0;
+}
+textarea{
+    margin-left: 50px;
+    background: transparent;
+    margin-bottom: 20px;
+    border: 1px solid #d8cdb0;
+    color: #d8cdb0;
+
+
+}
+#nm{
+    margin-right: 10px;
+}
+.btn3{
+    /* padding: 20px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* position: absolute; */
+}
+#callback{
+    margin-left: 40px;
+    padding: 10px;
+    border: 1px solid #d8cdb0;
+    border-radius: 20px;
+    background: transparent;
+    color: #d8cdb0;
+}
+#callback:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+#submit{
+    padding: 10px;
+    margin-left: 70px;
+    border: 1px solid #d8cdb0;
+    border-radius: 20px;
+    background: transparent;
+    color: #d8cdb0;
+}
+#submit:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
